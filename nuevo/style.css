@@ -1,0 +1,183 @@
+body {
+    font-family: Inter, sans-serif;
+    margin: 0;
+    padding: 0;
+  }
+  header {
+    text-align: center;
+    padding: 50px 0;
+    background-image: url('https://res.cloudinary.com/dh6ipg8bj/image/upload/v1735820476/Purple_and_White_Modern_Computer_Class_Google_Classroom_Header_ziwi71.png');
+    background-size: cover;
+    background-position: top;
+    color: #fff;
+    height: 40vh;
+    overflow: hidden;
+  }
+/* para que la media se ajuste a pantallas pequeñas */
+@media (max-width: 768px) {
+  header {
+    padding: 15px 0; 
+    height: 60vh; 
+  }
+}
+#cta {
+  display: flex;
+  align-items: center; 
+  padding: 50px;
+  background-color: #f0f0f0;
+  justify-content: center;
+  gap: 50px;
+}
+
+.cta-content {
+  text-align: left; 
+  max-width: 50%; 
+}
+
+.cta-image {
+  max-width: 35%;
+}
+
+.cta-image img {
+  height: auto;
+  display: block;
+  border-radius: 20px;
+  box-shadow: 15px 15px 0 0 #0074b9; 
+  object-fit: cover; 
+  width: 100%;
+}
+
+#cta h1 {
+  font-size: 4em;
+  margin: 0;
+  margin-top: 10px;
+  text-shadow: 2px 2px 2px #091a2e;
+}
+#cta h2 {
+  color: #091a2e;
+}
+#cta h1 span {
+  color: #007bff;
+}
+
+#cta p {
+  color: #091a2e;
+}
+
+/* ajustes responsivos */
+
+@media (max-width: 768px) {
+  #cta {
+      flex-direction: column; 
+      text-align: center; 
+      padding: 20px;
+      gap: 20px;
+  }
+
+  .cta-content {
+      max-width: 90%; 
+  }
+
+  .cta-image {
+      max-width: 80%;
+  }
+
+  #cta h1 {
+      font-size: 2.5em; 
+  }
+  #cta h2 {
+      font-size: 1.2em;
+  }
+  #cta p {
+      font-size: 0.9em;
+  }
+}
+
+  section {
+    padding: 50px 20px;
+    text-align: center;
+  }
+ 
+  .button { 
+    display: inline-flex;
+    align-items: center;
+    padding: 12px 24px; 
+    font-size: 1em;
+    background-color: #87CEEB; 
+    color: #000;
+    border: 2px solid #000;
+    border-radius: 5px;
+    box-shadow: 4px 4px 0 0 #000; 
+    position: relative;
+    overflow: hidden;
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    cursor: pointer;
+    text-decoration: none;
+    font-family: inherit;
+    font-weight: bold;
+  }
+  
+  .button::after {
+    content: '\279C'; 
+    margin-left: 8px;
+    transition: transform 0.2s ease; 
+    display: inline-block; 
+  }
+  
+  .button:hover {
+    transform: translate(-4px, -4px);
+    box-shadow: 6px 6px 0 0 #000
+  }
+  
+  .button:hover::after {
+      transform: translateX(3px);
+  }
+  
+  .button:active {
+    transform: translateY(0); 
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.25); 
+  }
+
+
+  section#form {
+    background-color: #0074b9;
+  }
+
+  #form h2 {
+    color: #fff;
+}
+
+  form {
+    color: #fff;
+    margin: 0 auto;
+    max-width: 350px;
+    text-align: left;
+    margin-bottom: 100px;
+  }
+  form label {
+    display: block;
+    margin-bottom: 5px;
+  }
+  form input,
+  form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+  }
+  form button {
+    width: 50%;
+    margin-left: 25%;
+  }
+  footer {
+    text-align: center;
+    background-color: #333;
+    color: #fff;
+    padding: 10px 0;
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+  }
+  
+  
